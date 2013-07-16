@@ -1,99 +1,205 @@
 <!DOCTYPE html>
-<html lang="en>
-<head>
-	<meta charset="utf-8" />
-	<title>My First BitStarter</title>
-	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.css" rel="stylesheet">
-	<link type="text/css"rel="stylesheet"
-		  href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
-	<style type="text/css">
-	body {
-		padding-top: 20px;
-		padding-bottom: 40px;
-		}
-		.container {
-		width: 960px;
-		}
-		p.lead {
-		padding-top: 15px;
-		}
-		.navigation, .pitch, .section1, .section2, .faq, .footer {
-		padding: 10px 0px 10px 0px;
-		}
-		.video {
-		/* Internal borders have 1px width, thus need to 4 x 1px to 120px. */
-		height: 124px;
-		line-height: 124px;
-		}
-		.thermometer, .order, .social {
-		/* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-		height: 40px;
-		line-height: 40px;
-		}
-		div.row {
-		border: 1px solid;
-		}
-	</style>
-</head>
-<body> 
-	<div class="container">
-		<div class="row navigation">
-			<div class="span2 logo">
-				Logo
-			</div>
-			<div class="span6 blank">
-				Blank
-			</div>
-			<div class="span4 about">
-				About
-			</div>
-		</div>
-		<div class="row heading">
-			<div class="span12">
-				<h1>Bitstarter Title</h1>
-			</div>
-		</div>
-		<div class="row subheading">
-			<div class="span12">
-				<p class="lead">This is my first bitstarter project.</p>
-			</div>
-		</div>
-		<div class="row pitch">
-			<div class="span6 video">
-				Video
-			</div>
-			<div class="span6">
-				<div class="thermometer">
-					Thermometer
-				</div>
-				<div class="order">
-					Order
-				</div>
-				<div class="social">
-					Social
-				</div>
-			</div>
-		</div>
-		<div class="row section1">
-			<div class="span12">
-				Marketing Section 1
-			</div>
-		</div>
-		<div class="row section2">
-			<div class="span12">
-				Marketing Section 2
-			</div>
-		</div>
-		<div class="row faq">
-			<div class="span12">
-				FAQ
-			</div>
-		</div>
-		<div class="row footer">
-			<div class="span12">
-				Footer
-			</div>
-		</div>
-	</div>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TravlrGuide: easy travel planning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rawgithub.com/tvandenbrande/bitstarter/master/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://rawgithub.com/tvandenbrande/bitstarter/master/social-buttons.css" type="text/css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      /*Large desktop */
+      @media (min-width: 980px) {
+         body{padding-top: 60px; background: url(http://thijsvandenbrande.be/travlrguide/berlin1910large.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+         .row-fluid{background-color: rgba(256, 256, 256, 0.8);}
+         .linediv-l{border-right:1px white solid;}
+         .linediv-r{border-left:1px white solid;}
+      }
+
+      /*landscape phones and down*/
+      @media(max-width: 480px){
+         .copy{padding: 2.5% 10%;}
+         .linediv-l{border-bottom: 1px white solid;}
+         .linediv-r{border-top: 1px white solid;}
+      }
+
+
+      /*All form factors*/
+      /*Main body and headings*/
+         body {font-family: 'Open Sans', Helvetica, Arial, sans-serif;}
+         .heading{font-family:'Ubuntu', Helvetica, Arial, sans-serif; text-align: center;}
+         .subheading{font-family:'Indie Flower', Helvetica, Arial, sans-serif; text-align: center;}
+         p.lead{padding-top: 1.5%; font-size: 24px; line-height: 30px;}
+         p{font-size: 18px; line-height: 24px;}
+      /*video pitch and Action*/
+         .pitch{padding: 2.5% 0%;}
+         .order{padding: 2% 0%;}
+         .actions{background-color: #3568ba; background-image:url(http://thijsvandenbrande.be/travlrguide/logo.png);background-position:bottom right; background-repeat:no-repeat; padding: 3% 0%}
+         .video, .thermometer, .order, .social, .statistics{text-align:center;}
+         .statistics h3, .statistics p{color:#d7d7d7;}
+
+      /*Marketing Copy and Footer*/
+         .copy{padding-top:2.5%; padding-bottom:2.5%; text-align:justify;}
+         .asset{padding: 2.5% 0%;}
+         .footer{color:#cccccc; text-align: center;}
+         .footer p{font-size:12px;}
+         .footer a{color:#ccccff;}
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<a class="brand" href="#"><img src="http://thijsvandenbrande.be/travlrguide/logo.png" width="20px;" height="20px;"> TravlrGuide</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#bitstarter">Why bitstarter</a></li>
+<li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row-fluid heading">
+<div class="span12">
+          <h1>TravlrGuide</h1>
+        </div>
+      </div>
+     <div class="row-fluid subheading">
+        <div class="span12">
+          <p class="lead">Travels: plan them, share them, perfect them, ... and enjoy them!</p>
+        </div>
+      </div>
+      <div class="row-fluid pitch">
+<div class="span5 offset1 video">
+<img class="img-polaroid" src="http://placehold.it/480x300">
+</div>
+        <!-- actions to contain info and sharing buttons-->
+<div class="span5 actions">
+<div class="span8 offset2">
+<div class="statistics">
+<div class="span4">
+<div class="linediv-l">
+<h3>50</h3><p>backers</p>
+</div>
+</div>	
+<div class="span4">
+<div class="linediv-c">
+<h3>$1,800</h3><p>of $90,000</p>
+</div>
+</div>
+<div class="span4">
+<div class="linediv-r">
+<h3>90</h3><p>days left</p>
+</div>
+</div>
+</div>
+</div>
+<div class="span10 offset1">
+            <div class="thermometer progress active">
+<div class="bar bar-info" style="width: 2%;"></div>
+<!--<div class="bar bar-warning" style="width: 98%;"></div>-->
+            </div>
+</div>
+          <div class="span6 offset3 order">
+            <button class="btn btn-success btn-large">Preorder</button>
+          </div>
+          <div class="span8 offset2 social">
+<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+          </div>
+        </div>
+      </div>
+<!-- start of marketing copy -->
+      <div class="row-fluid section1">
+<div class="span5 offset1 asset">
+<img class="img-polaroid" src="http://thijsvandenbrande.be/travlrguide/drawing1.jpg">
+</div>
+        <div class="span5 copy">
+<h4> A great trip starts with great planning</h4>
+          <p>Plan your travels with Travlrguide, select the must sees, and other landmarks and map your city visit or start from previously proven faboulous travels of outher travlrs. Time your entire trip around the city, plot the route on your Travlmap and share that map with your friends or other Travlrs.</p>
+<p>Help your friends to perfect their dream Travl by giving valueable feedback, create the most creative Travl and win have a chance to go on that Travl! Cause planning your Travl is already half the fun.</p>
+        </div>
+      </div>
+
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <h4>Your Personal TravlrGuide</h4>
+<p>Download the TravlrGuide App to your iPhone, iPod Touch, iPad or Android device and enjoy your personalised TravlrGuide. Sync your device before you go and enjoy your peersonal customized Travl itinerary mapped to your interests, walking speed, travel days and feedback from other Travlrs. Goodbey heavy Travel Guides and outdated information and welcome handy TravlrGuide!</p>
+        </div>
+<div class="span5 asset">
+<img class="img-polaroid" src="http://thijsvandenbrande.be/travlrguide/screens.jpg">
+</div>
+      </div>
+<!-- start of the FAQ section-->
+      <div class="row-fluid faq">
+        <div class="span10 offset1">
+          <h3>FAQ</h3>
+<div class="accordion" id="accordion2">
+<div class="accordion-group">
+<div class="accordion-heading">
+<a class="accoridon-toggle" data-toggle="collapse"
+data-parent="#accordion2" href="#collapseOne">
+Why is TravlrGuide different from any other Travelguide app?
+</a>
+</div>
+<div id="collapseOne" class="accordion-body collapse">
+<div class="accordion-inner">
+TravlrGuide let you plan your trip yourself in advance using an intuitive webapp and exports this plan to your smartphone or tablet keeping in mind your personal prefferences. TravlrGuide is also a social platform that allows it for your friends to interact with your travel plans.
+</div>
+              </div>
+</div>
+<div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accoridon-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseTwo">
+                  Is it possible to print out my Travl, because I don't have a smartphone or tablet?
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Yes, this is possible, this feature is helas only available for globeTravlrs. Globetravlrs are allowed to create more then 5 Travls and many other rewards. GlobeTravlrs pay less then $2.00 a month. For more\
+ details see <a href="#pricing">Pricing</a>.
+                </div>
+              </div>
+            </div>
+<div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accoridon-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseThree">
+                  Is Travlrguide free and how does it stay free of charge?
+                </a>
+              </div>
+              <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Yes, Travlrguide is a free webapp that allows you to plan and share your Travls. I allows you to create up to 5 Travls and share them with friends. If you want to support TravlrGuide and make the most efficient use of it, feel free to upgrade to a GlobeTravlr account. GlobeTravlrs pay less then $2.00 a month, can create more then 5 Travls,download predefined Travls that are voted as the top Travls and many more. For more details see <a href="#pricing">Pricing</a>.
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+
+      </div>
+<!-- footer region-->
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, TravlrGuide is developed by <a href="http://twitter.com/thijsvdb">@thijsvdb</a>.</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
