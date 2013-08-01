@@ -1,1 +1,220 @@
-Hello World from index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TravelBuds: Travel Community</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://rawgithub.com/tvandenbrande/bitstarter/master/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://rawgithub.com/tvandenbrande/bitstarter/master/social-buttons.css" type="text/css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      /*Large desktop */
+      @media (min-width: 980px) {
+         body{padding-top: 60px; background: url(http://upload.wikimedia.org/wikipedia/commons/9/94/1856_Desilver_Map_of_the_World_-_Geographicus_-_World-desilver-1856.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+         .row-fluid{background-color: rgba(256, 256, 256, 0.8);}
+         .linediv-l{border-right:1px white solid;}
+         .linediv-r{border-left:1px white solid;}
+      }
+
+      /*landscape phones and down*/
+      @media(max-width: 480px){
+         .copy{padding: 2.5% 10%;}
+         .linediv-l{border-bottom: 1px white solid;}
+         .linediv-r{border-top: 1px white solid;}
+      }
+
+
+      /*All form factors*/
+      /*Main body and headings*/
+         body {font-family: 'Open Sans', Helvetica, Arial, sans-serif;}
+         .heading{font-family:'Ubuntu', Helvetica, Arial, sans-serif; text-align: center;}
+         .subheading{font-family:'Indie Flower', Helvetica, Arial, sans-serif; text-align: center;}
+         p.lead{padding-top: 1.5%; font-size: 24px; line-height: 30px;}
+         p{font-size: 18px; line-height: 24px;}
+      /*video pitch and Action*/
+         .pitch{padding: 2.5% 0%;}
+         .order{padding: 2% 0%;}
+         .actions{background-color: #EBF0F8; background-image:url(http://www.freelogovectors.net/wp-content/uploads/2011/05/globe-05-2011.jpg);background-position:bottom right; background-repeat:no-repeat; padding: 3% 0%}
+         .video, .thermometer, .order, .social, .statistics{text-align:center;}
+         .statistics h3, .statistics p{color:#00000;}
+
+      /*Marketing Copy and Footer*/
+         .copy{padding-top:2.5%; padding-bottom:2.5%; text-align:justify;}
+         .asset{padding: 2.5% 0%;}
+         .footer{color:#cccccc; text-align: center;}
+         .footer p{font-size:12px;}
+         .footer a{color:#ccccff;}
+ 	/* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+ 		div.addthis_toolbox {
+  		width:180px;
+  		margin: 0 auto;
+ }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+<a class="brand" href="#"><img src="http://us.cdn3.123rf.com/168nwm/michaeldb/michaeldb1102/michaeldb110200002/8773905-map-of-earth-on-a-globe-symbol-with-east-west-lines-on-a-black-background.jpg" width="20px;" height="20px;"> TravelBuds</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#bitstarter">Why bitstarter</a></li>
+<li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row-fluid heading">
+<div class="span12">
+          <h1>TravelBuds</h1>
+        </div>
+      </div>
+     <div class="row-fluid subheading">
+        <div class="span12">
+          <p class="lead">TravelBuds: Find your TravelBud!</p>
+        </div>
+      </div>
+      <div class="row-fluid pitch">
+<div class="span5 offset1 video">
+<img class="img-polaroid" src="http://placehold.it/480x300">
+</div>
+        <!-- actions to contain info and sharing buttons-->
+<div class="span5 actions">
+<div class="span8 offset2">
+<div class="statistics">
+<div class="span4">
+<div class="linediv-l">
+<h3>25</h3><p>Buds</p>
+</div>
+</div>	
+<div class="span4">
+<div class="linediv-c">
+<h3>30</h3><p>Destinations</p>
+</div>
+</div>
+<div class="span4">
+<div class="linediv-r">
+<h3>90</h3><p>days left</p>
+</div>
+</div>
+</div>
+</div>
+<div class="span10 offset1">
+    <div class="thermometer progress active">
+		<div class="bar bar-info" style="width: 2%;"></div>
+		<!--<div class="bar bar-warning" style="width: 98%;"></div>-->
+	</div>
+</div>
+          <div class="span6 offset3 order">
+            <button class="btn btn-success btn-large">Login</button>
+          </div>
+          <div class="span8 offset2 social">
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		<a class="addthis_button_preferred_1"></a>
+		<a class="addthis_button_preferred_2"></a>
+		<a class="addthis_button_preferred_3"></a>
+		<a class="addthis_button_preferred_4"></a>
+		<a class="addthis_button_compact"></a>
+		<a class="addthis_counter addthis_bubble_style"></a>
+	</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51f9e077388c5114"></script>
+<!-- AddThis Button END -->
+          </div>
+        </div>
+      </div>
+<!-- start of marketing copy -->
+      <div class="row-fluid section1">
+<div class="span5 offset1 asset">
+<img class="img-polaroid" src="http://thijsvandenbrande.be/travlrguide/drawing1.jpg">
+</div>
+        <div class="span5 copy">
+<h4> A great trip starts with great planning</h4>
+          <p>Plan your travels with Travlrguide, select the must sees, and other landmarks and map your city visit or start from previously proven faboulous travels of outher travlrs. Time your entire trip around the city, plot the route on your Travlmap and share that map with your friends or other Travlrs.</p>
+<p>Help your friends to perfect their dream Travl by giving valueable feedback, create the most creative Travl and win have a chance to go on that Travl! Cause planning your Travl is already half the fun.</p>
+        </div>
+      </div>
+
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <h4>Your Personal TravelBuds</h4>
+<p>Download the TravelBuds App to your iPhone, iPod Touch, iPad or Android device and enjoy your personalised TravelBuds. Sync your device before you go and enjoy your peersonal customized Travl itinerary mapped to your interests, walking speed, travel days and feedback from other Travlrs. Goodbey heavy Travel Guides and outdated information and welcome handy TravelBuds!</p>
+        </div>
+<div class="span5 asset">
+<img class="img-polaroid" src="http://thijsvandenbrande.be/travlrguide/screens.jpg">
+</div>
+      </div>
+<!-- start of the FAQ section-->
+      <div class="row-fluid faq">
+        <div class="span10 offset1">
+          <h3>FAQ</h3>
+<div class="accordion" id="accordion2">
+<div class="accordion-group">
+<div class="accordion-heading">
+<a class="accoridon-toggle" data-toggle="collapse"
+data-parent="#accordion2" href="#collapseOne">
+Why is TravelBuds different from any other Travelguide app?
+</a>
+</div>
+<div id="collapseOne" class="accordion-body collapse">
+<div class="accordion-inner">
+TravelBuds let you plan your trip yourself in advance using an intuitive webapp and export this plan to your smartphone or tablet keeping in mind your personal prefferences. TravelBuds is also a social platform that allows you to post your plan on the web and find other people who might be interested in travelling to the same destination. You can also interact with them, make or change the current plan and then plan the trip together.
+</div>
+              </div>
+</div>
+<div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accoridon-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseTwo">
+                  Is it possible to print out my Travl, because I don't have a smartphone or tablet?
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Yes, this is possible, this feature is exclusively only available for GlobalBuds. GlobalBuds are allowed to create more then 5 Travel plans and many other rewards. GlobalBuds pay less then $2.00 a month. For more\
+ details see <a href="#pricing">Pricing</a>.
+                </div>
+              </div>
+            </div>
+<div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accoridon-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseThree">
+                  Is TravelBuds free and how does it stay free of charge?
+                </a>
+              </div>
+              <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Yes, TravelBuds is a free webapp that allows you to plan, share your Travel Plans, and find your TravelBuds. It allows you to create up to 5 plans and share them on your profile. If you want to support TravelBuds and make the most efficient use of it, feel free to upgrade to a GlobalBud account. GlobalBuds pay less then $2.00 a month, can create more then 5 plans, download predefined plans that are voted as the top plans and many more. For more details see <a href="#pricing">Pricing</a>.
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+
+      </div>
+<!-- footer region-->
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, TravelBuds is developed by <a href="http://twitter.com/kkumar2k">@kkumar2k</a>.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
