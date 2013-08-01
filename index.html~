@@ -58,7 +58,7 @@
 	<script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-42880089-1']);
+  _gaq.push(['_setAccount', 'UA-42880089-2']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -133,9 +133,10 @@
 		<!--<div class="bar bar-warning" style="width: 98%;"></div>-->
 	</div>
 </div>
-          <div class="span6 offset3 order">
+          <!--<div class="span6 offset3 order">
             <button class="btn btn-success btn-large">Login</button>
-          </div>
+          </div>-->
+	<a class="coinbase-button" data-code="dbfc89569880e08df9669a7c929710c3" href="https://coinbase.com/checkouts/dbfc89569880e08df9669a7c929710c3">PreOrder With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
           <div class="span8 offset2 social">
 		<!-- AddThis Button BEGIN -->
 		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
