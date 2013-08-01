@@ -55,6 +55,19 @@
   		margin: 0 auto;
  }
     </style>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42880089-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
   </head>
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -144,7 +157,7 @@
 </div>
         <div class="span5 copy">
 <h4> A great trip starts with great planning</h4>
-          <p>Plan your travels with Guidr, and map your city visit or start from previously proven faboulous travels of outher Buds. Time your entire trip around the city, plot the route on your Map and share that map with your friends or other TravelBuds.</p>
+          <p>Plan your travels with Guider, and map your city visit or start from previously proven faboulous travels of outher Buds. Time your entire trip around the city, plot the route on your Map and share that map with your friends or other TravelBuds.</p>
 <p>Help your friends to perfect their dream Travel by giving valueable feedback, create the most creative travel and win have a chance to go on that Travel! Cause planning your Travel is already half the fun.</p>
         </div>
       </div>
@@ -152,7 +165,7 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <h4>Your Personal TravelBuds</h4>
-<p>Download the TravelBuds App to your iPhone, iPod Touch, iPad or Android device and enjoy your personalised TravelBuds. Sync your device before you go and enjoy your peersonal customized Travl itinerary mapped to your interests, walking speed, travel days and feedback from other Travlrs. So say goodbye to heavy Travel Guides and outdated information, and welcome handy TravelBuds!</p>
+<p>Download the TravelBuds App to your iPhone, iPod Touch, iPad or Android device and enjoy your personalised TravelBuds. Sync your device before you go and enjoy your peersonal customized Travel itinerary mapped to your interests, walking speed, travel days and feedback from other TravelBuds. So say goodbye to heavy Travel Guides and outdated information, and welcome handy TravelBuds!</p>
         </div>
 <div class="span5 asset">
 <img class="img-polaroid" src="http://thijsvandenbrande.be/travlrguide/screens.jpg">
@@ -214,5 +227,15 @@ TravelBuds let you plan your trip yourself in advance using an intuitive webapp 
         </div>
       </div>
     </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42880089-2', 'herokuapp.com');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>
