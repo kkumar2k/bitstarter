@@ -53,7 +53,12 @@
  		div.addthis_toolbox {
   		width:180px;
   		margin: 0 auto;
+		
  }
+		div.coinbase-button {
+  		width:180px;
+  		margin: 0 auto;
+}
     </style>
 	<script type="text/javascript">
 
@@ -136,8 +141,13 @@
           <!--<div class="span6 offset3 order">
             <button class="btn btn-success btn-large">Login</button>
           </div>-->
-	<a class="coinbase-button" data-code="dbfc89569880e08df9669a7c929710c3" href="https://coinbase.com/checkouts/dbfc89569880e08df9669a7c929710c3">PreOrder With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-          <div class="span8 offset2 social">
+	<a class="coinbase-button"
+	data-button-style="custom_large"
+	data-button-text="Preorder with Bitcoin" 
+	data-code="8170c749255a0ab7c49b3135dc92e04e" 
+	href="https://coinbase.com/checkouts/8170c749255a0ab7c49b3135dc92e04e">PreOrder With Bitcoin</a><script 
+	src="https://coinbase.com/assets/button.js" 
+	type="text/javascript"></script>
 		<!-- AddThis Button BEGIN -->
 		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
 		<a class="addthis_button_preferred_1"></a>
